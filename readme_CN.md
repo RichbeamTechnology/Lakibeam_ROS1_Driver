@@ -7,8 +7,10 @@ Lakibeam ROS SDK 由锐驰智光（北京）科技有限公司针对LakiBeam1S/L
 # 2 环境和依赖关系
 
 系统环境要求：Linux+ROS
-推荐：Ubuntu 16.04 - with ROS kinetic desktop-full installed 或
+推荐：Ubuntu 16.04 - with ROS kinetic desktop-full installed 或  
+
 Ubuntu 18.04 - with ROS melodic desktop-full installed 或
+
 Ubuntu 20.04 - with ROS noetic desktop-full installed。
 
 Ubuntu 安装指南请参考 http://ros.org 上的资源。
