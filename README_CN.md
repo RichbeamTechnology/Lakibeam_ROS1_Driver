@@ -24,8 +24,8 @@ mkdir -p catkin_ws/src
 ## 3.2 编译
 在 Lakibeam ROS Driver 的工作空间中，执行以下指令编译工程:
 ```
-git clone https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver.git
 cd catkin_ws/src
+git clone https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver.git
 catkin_make
 ```
 
