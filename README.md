@@ -21,8 +21,8 @@ mkdir -p catkin_ws/src
 ```
 ## 3.2 Build Lakibeam ROS1 Driver
 ```
-git clone https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver.git
 cd catkin_ws/src
+git clone https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver.git
 catkin_make
 ```
 
