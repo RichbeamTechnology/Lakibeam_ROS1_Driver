@@ -57,7 +57,7 @@ roslaunch lakibeam1 lakibeam1_scan_view.launch
 The real time point cloud data under LaserScan in Rviz is shown in the picture below:
 ![image](https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver/assets/158011589/a95f0e13-6c40-4b1c-8c1a-74a867ad7f75)
 
-3.While using launch file to start PointCloud2 node, we can run the launch file “lakibeam1_pcd.launch” or “lakibeam1_pcd_view.launch” under /launch to view the real time point cloud data. Open a terminal:
+3. While using launch file to start PointCloud2 node, we can run the launch file “lakibeam1_pcd.launch” or “lakibeam1_pcd_view.launch” under /launch to view the real time point cloud data. Open a terminal:
 ```
 cd ~/catkin_ws
 source devel/setup.bash
