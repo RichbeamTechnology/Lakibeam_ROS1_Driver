@@ -64,3 +64,16 @@ roslaunch lakibeam1 lakibeam1_scan_view.launch
 RViz 中 运行 LaserScan 节点时的实时点云数据如下图所示：
 
 ![image](https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver/assets/158011589/abc00271-4baa-4199-8d2f-84da174eb824)
+
+
+3.在使用launch文件启动PointCloud2节点时，我们可以运行launch文件下的“lakibeam1_pcd.launch”或“lakibeam1_pcd_view.launch”来查看实时点云数据。打开终端：
+```
+cd ~/catkin_ws
+source devel/setup.bash
+roslaunch lakibeam1 lakibeam1_pcd.launch
+(run LaserScan node)
+roslaunch lakibeam1 lakibeam1_pcd_view.launch
+(run LaserScan node in RViz)
+```
+RViz 中 运行 LaserScan 节点时的实时点云数据如下图所示：
+![alt text](image-1.png)
