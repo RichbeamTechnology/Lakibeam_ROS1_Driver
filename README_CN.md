@@ -76,4 +76,4 @@ roslaunch lakibeam1 lakibeam1_pcd_view.launch
 (run LaserScan node in RViz)
 ```
 RViz 中 运行 LaserScan 节点时的实时点云数据如下图所示：
-![alt text](image-1.png)
+![alt text](image.png)

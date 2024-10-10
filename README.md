@@ -67,4 +67,4 @@ roslaunch lakibeam1 lakibeam1_pcd_view.launch
 (run LaserScan node in Rviz)
 ```
 The real time point cloud data under LaserScan in Rviz is shown in the picture below:
-![alt text](image-2.png)
+![alt text](image.png)
