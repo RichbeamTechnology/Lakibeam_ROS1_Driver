@@ -13,6 +13,8 @@
 
         <param name="scanfreq" type="string" value="30" /><!--配置扫描频率，范围：10、20、25、30-->
         <param name="filter" type="string" value="3" /><!--配置滤波选项，范围：3、2、1、0 -->
+        <param name="gain_factor" type="string" value="10" /><!--配置雷达增益系数，范围小于50-->
+        <param name="filter_threshold" type="string" value="170" /><!--配置雷达滤波阈值，范围大于130-->
         <param name="laser_enable" type="string" value="true" /><!--雷达扫描使能，范围：true、false-->
         <param name="scan_range_start" type="string" value="45" /><!--雷达扫描起始角度，范围：45~315-->
         <param name="scan_range_stop" type="string" value="315" /><!--雷达扫描结束角度，范围：45~315，结束角度必须大于起始角度-->

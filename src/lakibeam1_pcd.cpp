@@ -193,8 +193,8 @@ int main(int argc, char **argv)
 				}
 				else
 				{
-					iter_x[0] = (sin(DEG2RAD(scan_vec[scan_vec.size() - i - 1].angle + angle_offset) / 100) * (float)scan_vec[scan_vec.size() - i - 1].dist) / 1000;//x
-					iter_x[1] = (cos(DEG2RAD(scan_vec[scan_vec.size() - i - 1].angle + angle_offset) / 100) * (float)scan_vec[scan_vec.size() - i - 1].dist) / 1000;//y
+					iter_x[0] = (sin(DEG2RAD(scan_vec[scan_vec.size() - i - 1].angle + angle_offset) / 100) * (float)scan_vec[i].dist) / 1000;//x
+					iter_x[1] = (cos(DEG2RAD(scan_vec[scan_vec.size() - i - 1].angle + angle_offset) / 100) * (float)scan_vec[i].dist) / 1000;//y
 				}
 				iter_x[2] = 0.0;
 				iter_x[3] = (float)scan_vec[i].rssi;//intensity
