@@ -42,6 +42,16 @@ Before receiving data from sensor, we should configure parameters in launch file
 | hostip | Destination IP address, monitoring to all IP address when set to 0.0.0.0 |
 | port | Monitoring port, must be same with port number set on web server when using dual sensors in one PC |
 | angle_offset | Point cloud rotation angle around Z-axes, can be set to a negative number |
+| scanfreq | Scan frequency, range: 10, 20, 25, 30 |
+| filter | General filter, range: 0, 1, 2, 3 |
+| gain_factor | range: Less than 50|
+| filter_threshold | range: Greater than 130 |
+| laser_enable | range: true, false |
+| scan_range_start | range: 45°~315° |
+| scan_range_stop | range: 45°~315°, The scan_range_stop must be greater than the scan_range_start |
+
+
+
 
 # 6 View the Real Time Data
 1. Connect the LakiBeam1(L/S) to your PC via RJ45 cable and DC power supply or USB Type-C cable, and power on it.
