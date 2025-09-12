@@ -42,7 +42,7 @@ catkin_make
 | hostip | 目标 IP 地址，当设置为 0.0.0.0 时，可监听到所有 IP 地址 |
 | port | 通过交换机使用双雷达并将数据发送到同一台PC时，监听端口必须与雷达 WebSever 上设置的端口号相同 |
 | angle_offset | 点云绕 z 轴的旋转角度，可以设置为负数 |
-| scanfreq | 雷达的扫描频率，范围：10、20、25、30|
+| scanfreq | 雷达的扫描频率，范围：10、15、20、25、30|
 | laser_enabl | 扫描使能，“true”为开始工作 |
 | scan_range_start | 雷达扫描起始角度，范围：45~315 |
 | scan_range_stop | 雷达扫描结束角度，范围：45~315，结束角度必须大于起始角度 |
