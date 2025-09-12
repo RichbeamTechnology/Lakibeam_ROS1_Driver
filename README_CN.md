@@ -25,7 +25,7 @@ mkdir -p catkin_ws/src
 在 Lorabeam ROS Driver 的工作空间中，执行以下指令编译工程:
 ```
 cd catkin_ws/src
-git clone -b lorabeam https://github.com/RichbeamTechnology/Lakibeam_Ros1_Driver.git
+git clone -b lorabeam https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver.git
 catkin_make
 ```
 
