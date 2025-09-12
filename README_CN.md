@@ -2,7 +2,7 @@
 
 # 1 关于此驱动
 
-Lakibeam ROS Driver 由锐驰智光（北京）科技有限公司针对LakiBeam1S/LakiBeam1/LakiBeam1L激光雷达开发。启动后，该驱动将监听雷达发送的UDP数据，解析数据并将点云发布到 ROS 的/scan 或/pcd 话题中。
+Loraibeam ROS Driver 由锐驰智光（北京）科技有限公司针对LakiBeam1S/LakiBeam1/LakiBeam1L激光雷达开发。启动后，该驱动将监听雷达发送的UDP数据，解析数据并将点云发布到 ROS 的/scan 或/pcd 话题中。
 
 # 2 环境和依赖关系
 
