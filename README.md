@@ -42,7 +42,6 @@ Before receiving data from sensor, we should configure parameters in launch file
 | port | Monitoring port, must be same with port number set on web server when using dual sensors in one PC |
 | angle_offset | Point cloud rotation angle around Z-axes, can be set to a negative number |
 | scanfreq | Scan frequency, range: 10, 15, 20, 25, 30 |
-| filter | General filter, range: 0, 1, 2, 3 |
 | laser_enable | range: true, false |
 | scan_range_start | range: 45°~315° |
 | scan_range_stop | range: 45°~315°, The scan_range_stop must be greater than the scan_range_start |
