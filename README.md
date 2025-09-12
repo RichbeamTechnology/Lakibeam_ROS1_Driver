@@ -2,7 +2,7 @@
 
 # 1 About the Driver
 
-lorabeam ROS1 Drvier is the software development kit for: LoraBeam LiDAR manufactured by Richbeam (Beijing) Technology. After launched, the Driver will monitor UDP packets from Lidar, parse data and publish point clouds frames into ROS under topic: /scan or topic: /pcd.
+Lorabeam ROS1 Drvier is the software development kit for: LoraBeam LiDAR manufactured by Richbeam (Beijing) Technology. After launched, the Driver will monitor UDP packets from Lidar, parse data and publish point clouds frames into ROS under topic: /scan or topic: /pcd.
 
 # 2 Environment and Dependencies
 
@@ -19,7 +19,7 @@ Check resources on http://ros.org for installation guide.
 cd~
 mkdir -p catkin_ws/src
 ```
-## 3.2 Build lorabeam ROS1 Driver
+## 3.2 Build Lorabeam ROS1 Driver
 ```
 cd catkin_ws/src
 git clone -b lorabeam https://github.com/RichbeamTechnology/Lakibeam Ros1 Driver.git
