@@ -80,19 +80,19 @@ int main(int argc, char **argv)
 	ROS_INFO("scan_range_start:%s", scan_range_start.c_str());
 	ROS_INFO("scan_range_stop:%s", scan_range_stop.c_str());
 	ROS_INFO("angle_offset:%d", angle_offset);
-	ROS_INFO("gain_factor:%s", gain_factor.c_str());
-	ROS_INFO("filter_threshold:%s", filter_threshold.c_str());
+	//ROS_INFO("gain_factor:%s", gain_factor.c_str());
+	//ROS_INFO("filter_threshold:%s", filter_threshold.c_str());
 
-	sensor_config(sensorip, "/api/v1/sensor/scanfreq", scanfreq);
-	sensor_config(sensorip, "/api/v1/sensor/filter/level", filter);
+	//sensor_config(sensorip, "/api/v1/sensor/scanfreq", scanfreq);
+	//sensor_config(sensorip, "/api/v1/sensor/filter/level", filter);
 	sensor_config(sensorip, "/api/v1/sensor/laser_enable", laser_enable);
 	sensor_config(sensorip, "/api/v1/sensor/scan_range/start", scan_range_start);
 	sensor_config(sensorip, "/api/v1/sensor/scan_range/stop", scan_range_stop);
-	sensor_config(sensorip, "/api/v1/sensor/filter/min_angle", gain_factor);
-	sensor_config(sensorip, "/api/v1/sensor/filter/max_angle", filter_threshold);
+	//sensor_config(sensorip, "/api/v1/sensor/filter/min_angle", gain_factor);
+	//sensor_config(sensorip, "/api/v1/sensor/filter/max_angle", filter_threshold);
 
 	ros::Duration(2.0).sleep();
-	get_telemetry_data(sensorip);
+	//get_telemetry_data(sensorip);
 
 	sockfd = socket(AF_INET, SOCK_DGRAM, 0);
 	if (sockfd == -1)

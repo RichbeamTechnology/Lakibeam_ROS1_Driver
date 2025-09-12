@@ -2,7 +2,7 @@
 
 # 1 About the Driver
 
-LakiBeam ROS1 Drvier is the software development kit for: LakiBeam1S/LakiBeam1/LakiBeam1L LiDAR manufactured by Richbeam (Beijing) Technology. After launched, the Driver will monitor UDP packets from Lidar, parse data and publish point clouds frames into ROS under topic: /scan or topic: /pcd.
+LakiBeam ROS1 Drvier is the software development kit for: LoraBeam LiDAR manufactured by Richbeam (Beijing) Technology. After launched, the Driver will monitor UDP packets from Lidar, parse data and publish point clouds frames into ROS under topic: /scan or topic: /pcd.
 
 # 2 Environment and Dependencies
 
