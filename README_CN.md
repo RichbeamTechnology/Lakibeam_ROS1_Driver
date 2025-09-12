@@ -1,4 +1,4 @@
-[README](<https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver/blob/main/README.md>) - English Version of the readme
+[README](<https://github.com/RichbeamTechnology/Lorabeam_ROS1_Driver>) - English Version of the readme
 
 # 1 关于此驱动
 
