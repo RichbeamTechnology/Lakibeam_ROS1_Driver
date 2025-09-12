@@ -22,7 +22,7 @@ mkdir -p catkin_ws/src
 ## 3.2 Build Lorabeam ROS1 Driver
 ```
 cd catkin_ws/src
-git clone -b lorabeam https://github.com/RichbeamTechnology/Lakibeam Ros1 Driver.git
+git clone -b lorabeam https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver.git
 cd ~/catkin_ws
 catkin_make
 ```
