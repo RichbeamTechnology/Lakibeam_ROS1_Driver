@@ -36,8 +36,7 @@ catkin_make
 当使用 USB Type-C 线缆连接时，LakiBeam系列激光雷达(LoraBeam系列激光雷达不支持)的 IP 地址默认为 192.168.8.2，目标计算机的 IP 地址配置为 "192.168.8.1"，PC 将识别到一个USB大容量存储设备以及一个RNDIS网络设备（虚拟网卡），此虚拟网卡的的静态 IP 则不需要设置。输入雷达的 IP 地址：192.168.8.2 到 web 浏览器，然后设置 web 服务器中雷达 Host IP 为 "192.168.8.1"，并设置网络模式为 DHCP 模式并保存设置。雷达将在几秒钟延迟后重置网络配置。
 
 雷达的 web 服务器上通过 USB Type-C 线缆连接进行的 IP 配置如下图所示：
-
-![image](https://github.com/RichbeamTechnology/Lidar_ROS1_Driver/assets/158011589/09c012cb-5c99-4fb3-996d-7c98fd5fa67b)
+![image](https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver/assets/158011589/09c012cb-5c99-4fb3-996d-7c98fd5fa67b)
 
 # 5 launch 文件
 
@@ -70,7 +69,7 @@ roslaunch lidar lidar_scan_view.launch
 ```
 RViz 中 运行 LaserScan 节点时的实时点云数据如下图所示：
 
-![image](https://github.com/RichbeamTechnology/Lidar_ROS1_Driver/assets/158011589/abc00271-4baa-4199-8d2f-84da174eb824)
+![image](https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver/assets/158011589/abc00271-4baa-4199-8d2f-84da174eb824)
 
 
 3. 在使用launch文件启动PointCloud2节点时，我们可以运行launch文件下的“lidar_pcd.launch”或“lidar_pcd_view.launch”来查看实时点云数据。打开终端：
