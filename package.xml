@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>lakibeam1</name>
+  <name>lidar</name>
   <version>1.0.0</version>
-  <description>The lakibeam1 lidar ros package</description>
-  <maintainer email="ros@richbeam.com">richbeam</maintainer>
+  <description>The lidar  ros package</description>
+  <maintainer email="ros@lidar.com">lidar</maintainer>
+
 
   <!-- One license tag required, multiple allowed, one license per tag -->
   <!-- Commonly used license strings: -->

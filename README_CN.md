@@ -1,8 +1,8 @@
-[README](<https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver/blob/main/README.md>) - English Version of the readme
+[README](<https://github.com/RichbeamTechnology/Lidar_ROS1_Driver/blob/main/README.md>) - English Version of the readme
 
 # 1 关于此驱动
 
-Lakibeam ROS Driver 由锐驰智光（北京）科技有限公司针对LakiBeam1S/LakiBeam1/LakiBeam1L激光雷达开发。启动后，该驱动将监听雷达发送的UDP数据，解析数据并将点云发布到 ROS 的/scan 或/pcd 话题中。
+Lidar ROS Driver 由锐驰智光（北京）科技有限公司针对LakiBeam系列、LoraBeam系列激光雷达开发。启动后，该驱动将监听雷达发送的UDP数据，解析数据并将点云发布到 ROS 的/scan 或/pcd 话题中。
 
 # 2 环境和依赖关系
 
@@ -22,22 +22,22 @@ cd~
 mkdir -p catkin_ws/src
 ```
 ## 3.2 编译
-在 Lakibeam ROS Driver 的工作空间中，执行以下指令编译工程:
+在 Lidar ROS Driver 的工作空间中，执行以下指令编译工程:
 ```
 cd catkin_ws/src
-git clone https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver.git
+git clone https://github.com/RichbeamTechnology/Lidar_ROS1_Driver.git
 catkin_make
 ```
 
 # 4 配置电脑 IP 地址
 
-当通过 RJ45 网线和直流电源连接时，LakiBeam1(L/S)的 IP 地址默认为 192.168.198.2，其目标计算机的 IP 地址为 192.168.198.1。所以我们需要将 PC 的静态 IP 设置为 "192.168.198.1"，子网掩码设置为 "255.255.255.0"，网关地址为非必填项。
+当通过 RJ45 网线和直流电源连接时，LakiBeam系列、LoraBeam系列激光雷达的 IP 地址默认为 192.168.198.2，其目标计算机的 IP 地址为 192.168.198.1。所以我们需要将 PC 的静态 IP 设置为 "192.168.198.1"，子网掩码设置为 "255.255.255.0"，网关地址为非必填项。
 
-当使用 USB Type-C 线缆连接时，LakiBeam1(L/S)的 IP 地址默认为 192.168.8.2，目标计算机的 IP 地址配置为 "192.168.8.1"，PC 将识别到一个USB大容量存储设备以及一个RNDIS网络设备（虚拟网卡），此虚拟网卡的的静态 IP 则不需要设置。输入雷达的 IP 地址：192.168.8.2 到 web 浏览器，然后设置 web 服务器中雷达 Host IP 为 "192.168.8.1"，并设置网络模式为 DHCP 模式并保存设置。雷达将在几秒钟延迟后重置网络配置。
+当使用 USB Type-C 线缆连接时，LakiBeam系列激光雷达(LoraBeam系列激光雷达不支持)的 IP 地址默认为 192.168.8.2，目标计算机的 IP 地址配置为 "192.168.8.1"，PC 将识别到一个USB大容量存储设备以及一个RNDIS网络设备（虚拟网卡），此虚拟网卡的的静态 IP 则不需要设置。输入雷达的 IP 地址：192.168.8.2 到 web 浏览器，然后设置 web 服务器中雷达 Host IP 为 "192.168.8.1"，并设置网络模式为 DHCP 模式并保存设置。雷达将在几秒钟延迟后重置网络配置。
 
 雷达的 web 服务器上通过 USB Type-C 线缆连接进行的 IP 配置如下图所示：
 
-![image](https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver/assets/158011589/09c012cb-5c99-4fb3-996d-7c98fd5fa67b)
+![image](https://github.com/RichbeamTechnology/Lidar_ROS1_Driver/assets/158011589/09c012cb-5c99-4fb3-996d-7c98fd5fa67b)
 
 # 5 launch 文件
 
@@ -58,28 +58,28 @@ catkin_make
 
 # 6 查看实时数据
 
-1. 通过 RJ45 网口和直流电源或 USB Type-C 线缆将 LakiBeam1(L/S)连接到 PC 上。
-2. 驱动内提供了几个标准的launch文件，例如 "lakibeam1_scan.launch" 和"lakibeam1_scan_view.launch"。要启动 LaserScan 节点，我们可以运行带有 scan 名称的 launch 文件来查看实时点云数据。打开终端：
+1. 通过 RJ45 网口和直流电源将Lidar连接到 PC 上。
+2. 驱动内提供了几个标准的launch文件，例如 "lidar_scan.launch" 和"lidar_scan_view.launch"。要启动 LaserScan 节点，我们可以运行带有 scan 名称的 launch 文件来查看实时点云数据。打开终端：
 ```
 cd ~/catkin_ws
 source devel/setup.bash
-roslaunch lakibeam1 lakibeam1_scan.launch
+roslaunch lidar lidar_scan.launch
 (run LaserScan node)
-roslaunch lakibeam1 lakibeam1_scan_view.launch
+roslaunch lidar lidar_scan_view.launch
 (run LaserScan node in RViz)
 ```
 RViz 中 运行 LaserScan 节点时的实时点云数据如下图所示：
 
-![image](https://github.com/RichbeamTechnology/Lakibeam_ROS1_Driver/assets/158011589/abc00271-4baa-4199-8d2f-84da174eb824)
+![image](https://github.com/RichbeamTechnology/Lidar_ROS1_Driver/assets/158011589/abc00271-4baa-4199-8d2f-84da174eb824)
 
 
-3.在使用launch文件启动PointCloud2节点时，我们可以运行launch文件下的“lakibeam1_pcd.launch”或“lakibeam1_pcd_view.launch”来查看实时点云数据。打开终端：
+3. 在使用launch文件启动PointCloud2节点时，我们可以运行launch文件下的“lidar_pcd.launch”或“lidar_pcd_view.launch”来查看实时点云数据。打开终端：
 ```
 cd ~/catkin_ws
 source devel/setup.bash
-roslaunch lakibeam1 lakibeam1_pcd.launch
+roslaunch lidar lidar_pcd.launch
 (run LaserScan node)
-roslaunch lakibeam1 lakibeam1_pcd_view.launch
+roslaunch lidar lidar_pcd_view.launch
 (run LaserScan node in RViz)
 ```
 RViz 中 运行 LaserScan 节点时的实时点云数据如下图所示：

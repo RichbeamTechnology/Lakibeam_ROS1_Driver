@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(lakibeam1)
+project(lidar)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -48,10 +48,10 @@ find_package(PCL REQUIRED)
 include_directories(include${PCL_INCLUDE_DIRS} )
 link_directories(${PCL_LIBRARY_DIRS})
 
-add_executable(${PROJECT_NAME}_scan_node src/lakibeam1_scan.cpp src/remote.cpp)
+add_executable(${PROJECT_NAME}_scan_node src/lidar_scan.cpp src/remote.cpp)
 target_link_libraries(${PROJECT_NAME}_scan_node ${catkin_LIBRARIES} ${PCL_LIBRARIES} curl)
 
-add_executable(${PROJECT_NAME}_pcd_node src/lakibeam1_pcd.cpp src/remote.cpp)
+add_executable(${PROJECT_NAME}_pcd_node src/lidar_pcd.cpp src/remote.cpp)
 target_link_libraries(${PROJECT_NAME}_pcd_node ${catkin_LIBRARIES} ${PCL_LIBRARIES} curl)
 
 #############
